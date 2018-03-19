@@ -1,10 +1,5 @@
-[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
-
-Kotlin Koans
+Kotlin
 ===========
-
-Kotlin Koans Workshop is a series of exercises to get you familiar with the Kotlin Syntax. 
-Each exercise is created as a failing unit test and your job is to make it pass. 
 
 #### How to build and run tests
 
@@ -30,13 +25,6 @@ $ ./gradlew test --tests i_*          # run tests in part 1
 $ ./gradlew test --tests ii_*         # run tests in part 2
 $ ./gradlew test --tests ii_*22*      # run test number 22 in part 2
 ```
-
-
-#### How to check yourself
-
-The repository has two branches, `master` which contains the exercises for you to do and `resolutions` which contains the resolved exercises. 
-Make sure you don’t cheat!
-
 
 #### How the tasks are organized
  
@@ -66,18 +54,3 @@ with the correct, meaningful code in order to solve the problem and allow the as
 ```kotlin
 fun task0() = "OK"
 ```
-
-The `resolutions` branch contains all the solutions.
-It's a good idea to check the proposed solution after completing each task.
-Open the file with your solution, call the `Compare with branch...` action and choose the `resolutions` branch.   
-You can find [here](https://www.jetbrains.com/help/idea/navigating-to-action.html) how to call an action.
-
-
-#### Other ways to solve Koans
-
-You can solve the similar tasks using Educational Plugin or in the browser:
-
-- EduTools Plugin https://plugins.jetbrains.com/plugin/10081-edutools
-- online version of koans http://try.kotl.in
-
-The koans tasks for web-demo and educational plugin can be found here: https://github.com/Kotlin/kotlin-koans-edu
