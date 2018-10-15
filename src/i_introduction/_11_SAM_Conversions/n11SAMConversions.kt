@@ -14,7 +14,14 @@ fun todoTask11(): Nothing = TODO(
 )
 
 fun task11(): List<Int> {
+    val comparator = Comparator<Int> { o1, o2 ->
+        if (o1 == null){
+            return@Comparator o2 ?: 0
+        }
+        o2?.minus(o1) ?: 0
+    }
+
     val arrayList = arrayListOf(1, 5, 2)
-    Collections.sort(arrayList, { x, y -> todoTask11() })
+    Collections.sort(arrayList, comparator)
     return arrayList
 }
